@@ -1,0 +1,63 @@
+// Default Style -------------------------------------------------------- //
+a.btn,
+.btn {
+
+	display: inline-block;
+	margin: 0 0 $gutter/2;
+	padding: .5em 1em;
+	line-height: 1em;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	user-select: none;
+	transition: background $duration $timing;
+	border: 0;
+	border-radius: 0;
+
+	&:active {
+		transition: none;
+	}
+
+}
+
+// Mixin ---------------------------------------------------------------- //
+@mixin btn($name: '', $c: #444, $hc: null, $ac: null) {
+
+	/*
+	 * @include btn('white', white);
+	 * @include btn('black', black);
+	 * @include btn('custom', red, blue, black);
+	 */
+
+	$fc: null;
+	$hc: lighten($c, 10%) !default;
+	$ac: darken($c, 10%) !default;
+
+	@if lightness($c) <= 50% { $fc: white; }
+	@if lightness($c) > 50% { $fc: black; }
+
+	a.btn--#{ $name },
+	.btn--#{ $name } {
+
+		background: $c;
+		color: $fc;
+
+		&:hover {
+			background: $hc;
+		}
+
+		&:active {
+			background: $ac;
+		}
+
+		@content;
+
+	}
+
+}
+
+// Variations ----------------------------------------------------------- //
+@each $colorName, $color in $colors {
+	@include btn($colorName, $color);
+}

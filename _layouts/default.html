@@ -1,0 +1,19 @@
+{% include _layout/start.html %}
+<body>
+    <div class="row">
+        <div class="column">
+            {% include header.html %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            {{ content }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            {% include footer.html %}
+        </div>
+    </div>
+{% include _layout/end.html %}
