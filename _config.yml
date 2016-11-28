@@ -25,6 +25,7 @@ exclude:
   - package.json
   - README.md
   - makefile
+  - appveyor.yml
 keep_files:
   - assets
   - css/main.css
