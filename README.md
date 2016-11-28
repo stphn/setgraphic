@@ -1,4 +1,6 @@
 # Jekyllplate
+[![Dependencies](https://david-dm.org/stphn/Jekyllplate.svg)](https://david-dm.org/stphn/Jekyllplate#info=dependencies)
+
 Just another boilerplate for static Jekyll sites using gulp automations.
 
 It includes webpack for JS bundling and ES2015 transforms, CSS injection and auto-reload with BrowserSync, and a bunch of other useful tasks.
