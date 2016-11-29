@@ -1,18 +1,25 @@
 # Jekyllplate
 [![Dependencies](https://david-dm.org/stphn/Jekyllplate.svg)](https://david-dm.org/stphn/Jekyllplate#info=dependencies) [![Build status](https://ci.appveyor.com/api/projects/status/h12tdfowqiwl7mrf?svg=true)](https://ci.appveyor.com/project/stphn/jekyllplate)
 
-Just another boilerplate for static Jekyll sites using gulp automations.
+
+Not just another boilerplate for static Jekyll sites using gulp automations.
+
 
 ![http://setgraphic.com/signature/logo-jekyll.svg](http://setgraphic.com/signature/logo-jekyll.svg)
 
-This boilerplate includes some common but very useful gulp tasks, auto-reload with BrowserSync and webpack.
 
-### Pre-requisites
+This boilerplate includes common useful gulp tasks, auto-reload with BrowserSync and  ES6 modules from webpack.
+
+
+## Pre-requisites
+***
+
 - [Node.js](http://nodejs.org/)
 - [Gulp](http://gulpjs.com/)
 - [Ruby](https://www.ruby-lang.org)
 
-### Installation
+## Installation
+***
 ***Double-check*** the Pre-requisites listed above and open your command line tool ...
 
 ```
@@ -30,6 +37,7 @@ $ gulp serve
  et Voilà
 
 ### Writing Posts
+***
 To add new drafts, add a file in the `posts/_drafts` directory that follows the naming convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary YAML front matter:
 
     ---
@@ -43,6 +51,7 @@ To add new drafts, add a file in the `posts/_drafts` directory that follows the 
 Once you're ready to publish this draft, move the file to `posts/_posts`.
 
 ### Creating Pages
+***
 Create new pages in the root directory (or pretty much any subdirectory). The filename will form part of the URL.
 
 Pages will need [front matter](https://jekyllrb.com/docs/frontmatter/) as well, for example:
@@ -57,16 +66,19 @@ Pages will need [front matter](https://jekyllrb.com/docs/frontmatter/) as well, 
 Only pages with `nav` set to `true` will appear in the top navigation. Easy.
 
 ### Deployment
+***
 This is automatically ready to deploy, so long as the `gulp` server has been running during development.
 
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
 
-### Thanks and credits
+##Thanks and credits
+***
 
 Tobias Reich for is inspiring work
 
 
 ### Still todo
+***
 
 *  Include Open Graph protocols
 
