@@ -7,6 +7,8 @@ install:
   # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
   # install modules
+  - SET PATH=C:\Ruby%RUBY_FOLDER_VER%\bin;%PATH%
+  - bundle install --retry 5 --jobs=%NUMBER_OF_PROCESSORS% --clean --path vendor\bundle
   - bundle install
   - npm install
   - make
