@@ -2,6 +2,7 @@
 [![Dependencies](https://david-dm.org/stphn/Jekyllplate.svg)](https://david-dm.org/stphn/Jekyllplate#info=dependencies) [![Build status](https://ci.appveyor.com/api/projects/status/h12tdfowqiwl7mrf?svg=true)](https://ci.appveyor.com/project/stphn/jekyllplate)
 
 Just another boilerplate for static Jekyll sites using gulp automations.
+![http://setgraphic.com/signature/logo-jekyll.svg](http://setgraphic.com/signature/logo-jekyll.svg)
 
 It includes webpack for JS bundling and ES2015 transforms, SCSS injection and auto-reload with BrowserSync, and a lot of other useful tasks.
 
