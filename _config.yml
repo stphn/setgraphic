@@ -11,9 +11,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://setgraphic.com/" # the base hostname & protocol for your site
 lang: US
 twitter_username: setgraphic
-github_username: setgraphic
-linkedin_username: setgraphic
-UA: UA-XXXXXXX-X
+github_username: stphn
+linkedin_username: goeuriot
+UA: UA-XXXXXXX-X # google analytic code
 
 # Build settings
 markdown: kramdown
@@ -34,3 +34,9 @@ keep_files:
   - css/main.min.css
   - scripts/main.js
   - scripts/main.min.js
+# Atom.io settings
+atom:
+  postDirs:
+    - posts/_drafts
+    - posts/_posts
+  defaultPostDir: _drafts
