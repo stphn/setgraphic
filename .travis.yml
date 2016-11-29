@@ -3,5 +3,3 @@ rvm:
   - 2.1
 script:
   - bundle install
-  - npm install
-  - npm make
