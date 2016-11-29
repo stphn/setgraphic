@@ -26,6 +26,8 @@ exclude:
   - README.md
   - makefile
   - appveyor.yml
+  - bower.json
+  - tasks
 keep_files:
   - assets
   - css/main.css
