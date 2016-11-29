@@ -12,15 +12,14 @@ This boilerplate includes common useful gulp tasks, auto-reload with BrowserSync
 
 
 ## Pre-requisites
-***
 
 - [Node.js](http://nodejs.org/)
 - [Gulp](http://gulpjs.com/)
 - [Ruby](https://www.ruby-lang.org)
 
 ## Installation
-***
-***Double-check*** the Pre-requisites listed above and open your command line tool ...
+
+Make sure you **double-checked** the pre-requisites listed above and open your command line interface ...
 
 ```
 $ git clone https://github.com/stphn/jekyllplate.git
@@ -37,7 +36,6 @@ $ gulp serve
  et Voilà
 
 ### Writing Posts
-***
 To add new drafts, add a file in the `posts/_drafts` directory that follows the naming convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary YAML front matter:
 
     ---
@@ -51,7 +49,6 @@ To add new drafts, add a file in the `posts/_drafts` directory that follows the 
 Once you're ready to publish this draft, move the file to `posts/_posts`.
 
 ### Creating Pages
-***
 Create new pages in the root directory (or pretty much any subdirectory). The filename will form part of the URL.
 
 Pages will need [front matter](https://jekyllrb.com/docs/frontmatter/) as well, for example:
@@ -65,23 +62,15 @@ Pages will need [front matter](https://jekyllrb.com/docs/frontmatter/) as well, 
 
 Only pages with `nav` set to `true` will appear in the top navigation. Easy.
 
-### Deployment
-***
+## Deployment
 This is automatically ready to deploy, so long as the `gulp` server has been running during development.
 
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
 
-##Thanks and credits
-***
-
+### Thanks and credits
 Tobias Reich for is inspiring work
 
-
 ### Still todo
-***
-
 *  Include Open Graph protocols
-
 *  cleaning up
-
 *  and probably a lot more ...
