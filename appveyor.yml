@@ -14,12 +14,11 @@ install:
 # Post-install test scripts.
 test_script:
   # Output useful info for debugging.
-  test_script:
+  - node --version
+  - npm --version
   - ruby --version
   - gem --version
   - bundler --version
-  - node --version
-  - npm --version
   # run tests
   - npm test
 
