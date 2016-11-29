@@ -1,28 +1,13 @@
-# Test against this version of Node.js
-environment:
-  nodejs_version: "0.10"
-
-# Install scripts. (runs after repo cloning)
 install:
-  # Get the latest stable version of Node.js or io.js
-  - ps: Install-Product node $env:nodejs_version
-  # install modules
-  - SET PATH=C:\Ruby%RUBY_FOLDER_VER%\bin;%PATH%
-  - bundle install --retry 5 --jobs=%NUMBER_OF_PROCESSORS% --clean --path vendor\bundle
+  - set PATH=C:\Ruby22\bin;%PATH%
   - bundle install
-  - npm install
-  - make
 
-# Post-install test scripts.
-test_script:
-  # Output useful info for debugging.
-  - node --version
-  - npm --version
-  - ruby --version
-  - gem --version
-  - bundler --version
-  # run tests
-  - npm test
-
-# Don't actually build.
 build: off
+
+before_test:
+  - ruby -v
+  - gem -v
+  - bundle -v
+
+test_script:
+  - bundle exec rake
