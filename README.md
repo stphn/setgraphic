@@ -3,7 +3,7 @@
 
 Just another boilerplate for static Jekyll sites using gulp automations.
 
-It includes webpack for JS bundling and ES2015 transforms, CSS injection and auto-reload with BrowserSync, and a bunch of other useful tasks.
+It includes webpack for JS bundling and ES2015 transforms, SCSS injection and auto-reload with BrowserSync, and a lot of other useful tasks.
 
 ### Pre-requisites
 - [Node.js](http://nodejs.org/)
@@ -33,7 +33,7 @@ Once you're ready to publish this draft, move the file to `posts/_posts`.
 ### Creating Pages
 Create new pages in the root directory (or pretty much any subdirectory). The filename will form part of the URL.
 
-Pages will need front matter as well, for example:
+Pages will need [front matter](https://jekyllrb.com/docs/frontmatter/) as well, for example:
 
     ---
     layout: default
@@ -49,7 +49,10 @@ This is automatically ready to deploy, so long as the `gulp` server has been run
 
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
 
-### TODO
-Include Open Graph protocols
-Clean up
-and more ...
+### Still todo
+
+*  Include Open Graph protocols
+
+*  clean up
+
+*  and probably a lot more ...
