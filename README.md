@@ -5,11 +5,7 @@ Just another boilerplate for static Jekyll sites using gulp automations.
 
 ![http://setgraphic.com/signature/logo-jekyll.svg](http://setgraphic.com/signature/logo-jekyll.svg)
 
-It includes:
-
-* webpack for JS bundling and ES2015 transforms
-* SCSS injection and auto-reload with BrowserSync
-* and a lot of other useful tasks.
+This boilerplate includes some common but very useful gulp tasks, auto-reload with BrowserSync and webpack.
 
 ### Pre-requisites
 - [Node.js](http://nodejs.org/)
@@ -17,23 +13,21 @@ It includes:
 - [Ruby](https://www.ruby-lang.org)
 
 ### Installation
-**❗️Install all the dependencies listed above**
-
- then open terminal console and enter
+***Double-check*** the Pre-requisites listed above and open your command line tool ...
 
 ```
 $ git clone https://github.com/stphn/jekyllplate.git
 
-// install other dependencies
+// go inside the folder
 $ cd jekillplate
 
 // install other dependencies
 $ npm start
 
-//start the file watching	
-$ gulp serveto	
+// start the file watching	
+$ gulp serve	
 ```
- 
+ et Voilà
 
 ### Writing Posts
 To add new drafts, add a file in the `posts/_drafts` directory that follows the naming convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary YAML front matter:
@@ -67,10 +61,15 @@ This is automatically ready to deploy, so long as the `gulp` server has been run
 
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
 
+### Thanks and credits
+
+Tobias Reich for is inspiring work
+
+
 ### Still todo
 
 *  Include Open Graph protocols
 
-*  clean up
+*  cleaning up
 
 *  and probably a lot more ...
