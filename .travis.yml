@@ -1,5 +1,10 @@
-language: ruby
-rvm:
-  - 2.1
-script:
-  - bundle install
+language: node_js
+node_js:
+  - "6"
+  - "6.1"
+  - "5.11"
+  - "0.6"
+  - "iojs"
+before_script:
+  - npm install -g gulp
+script: gulp
