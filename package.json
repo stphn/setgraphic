@@ -5,6 +5,7 @@
   "author": "Stephane Goeuriot",
   "license": "MIT",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "bower install",
     "start": "bundle install && npm install && make"
   },
