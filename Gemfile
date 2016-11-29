@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+gem 'rake'
 # Without this, the blog is nil, nada, nothing.
-gem 'jekyll'
+gem 'jekyll', '3.1.6'
 gem 'sass'
