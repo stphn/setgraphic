@@ -1,7 +1,8 @@
 body {
 
-	display: block;
-	min-height: 100%;
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 	background: white;
 	font: $fontStack;
 	-webkit-font-smoothing: antialiased;
