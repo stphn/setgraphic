@@ -37,7 +37,7 @@ $ gulp serve
 ```
  et voilà
 
-### Writing Posts
+### How to write posts
 To add new drafts, add a file in the `posts/_drafts` directory that follows the naming convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary YAML front matter:
 
     ---
@@ -50,7 +50,7 @@ To add new drafts, add a file in the `posts/_drafts` directory that follows the 
 
 Once you're ready to publish this draft, move the file to `posts/_posts`.
 
-### Creating Pages
+### How to create pages
 Create new pages in the root directory (or pretty much any subdirectory). The filename will form part of the URL.
 
 Pages will need [front matter](https://jekyllrb.com/docs/frontmatter/) as well, for example:
@@ -70,7 +70,9 @@ This is automatically ready to deploy, so long as the `gulp` server has been run
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
 
 ### Thanks and credits
-[Tobias Reich](https://github.com/electerious) for is inspiring work
+
+- [Tobias Reich](https://github.com/electerious) for his inspiring work
+- [Van Le](https://github.com/vannio) for her inspiring work
 
 ### Still todo
 *  Include Open Graph protocols
