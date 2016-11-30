@@ -16,6 +16,7 @@ This boilerplate includes common useful gulp tasks, auto-reload with BrowserSync
 ## Pre-requisites
 
 - [Node.js](http://nodejs.org/)
+- [Bower](https://bower.io)
 - [Gulp](http://gulpjs.com/)
 - [Ruby](https://www.ruby-lang.org)
 
@@ -70,7 +71,7 @@ This is automatically ready to deploy, so long as the `gulp` server has been run
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
 
 ### Thanks and credits
-Tobias Reich for is inspiring work
+[Tobias Reich](https://github.com/electerious) for is inspiring work
 
 ### Still todo
 *  Include Open Graph protocols
