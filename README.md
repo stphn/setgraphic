@@ -6,7 +6,7 @@
 Not just another boilerplate for static Jekyll sites using gulp automations.
 
 
-![http://setgraphic.com/signature/jekyll-gulp.svg](http://setgraphic.com/signature/jekyll-gulp.svg)
+![](http://setgraphic.com/signature/jekyll-gulp.svg)
 
 
 This boilerplate includes common useful gulp tasks, auto-reload with BrowserSync and  ES6 modules from webpack.
