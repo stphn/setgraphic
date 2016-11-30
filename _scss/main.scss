@@ -7,9 +7,10 @@
 // Bower ------------------------------------------------------- //
 @import '../bower/basicGrid/src/styles/main';
 
-// Others ------------------------------------------------------ //
+// Global ------------------------------------------------------ //
 @import 'html';
 @import 'body';
+@import 'section';
 @import 'typography';
 @import 'syntax-highlighting';
 @import 'img';
@@ -20,3 +21,11 @@
 @import 'c';
 @import 'btn';
 @import 'align';
+
+// Main Header specific ------------------------------------------------------ //
+@import 'header';
+@import 'brand';
+@import 'nav';
+
+// Main Footer specific ------------------------------------------------------ //
+@import 'footer';
