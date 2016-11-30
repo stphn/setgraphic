@@ -1,0 +1,7 @@
+.footer {
+	display: flex;
+	align-items: center;
+	&__links {
+		padding-right: $gutter/2;
+	}
+}
