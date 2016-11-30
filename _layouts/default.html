@@ -1,19 +1,22 @@
 {% include _layout/start.html %}
 <body>
-    <div class="row">
-        <div class="column">
-            {% include header.html %}
-        </div>
+
+    <div class="section section__header">
+        {% include header.html %}
     </div>
-    <div class="row">
-        <div class="column">
-            {{ content }}
+
+    <div class="section section__main">
+        <div class="row">
+            <div class="column">
+                <main>
+                    {{ content }}
+                </main>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="column">
-            {% include footer.html %}
-        </div>
+    <div class="section section__footer">
+        {% include footer.html %}
     </div>
-{% include _layout/end.html %}
+
+    {% include _layout/end.html %}

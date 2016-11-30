@@ -1,13 +1,19 @@
-<header class="header">
-	<a href="#" class="brand-name">{{ site.title }}</a>
-	<nav class="main-nav">
+<div class="row">
+    <div class="column">
+        <header class="header">
 
-		<a class="page-link ajax-link" href="{{ site.baseurl }}/">Home</a>
-		{% for my_page in site.pages %}
-		{% if my_page.title and my_page.nav %}
-		<a class="page-link ajax-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-		{% endif %}
-		{% endfor %}
+            <div class="brand"><a href="#">{{ site.brand}}</a></div>
 
-	</nav>
+            <nav class="main-nav">
+                <a href="{{ site.baseurl }}/">Home</a>
+                {% for my_page in site.pages %}
+                {% if my_page.title and my_page.nav %}
+                <a class="page-link ajax-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                {% endif %}
+                {% endfor %}
+
+            </nav>
+
+        </div>
+    </div>
 </header>
