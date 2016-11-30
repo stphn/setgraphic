@@ -7,6 +7,7 @@
 
 # Site settings
 title: Your Title
+brand: Your Awesome Product
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://setgraphic.com/" # the base hostname & protocol for your site
 lang: US
