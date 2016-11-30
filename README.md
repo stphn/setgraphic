@@ -3,7 +3,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/h12tdfowqiwl7mrf?svg=true)](https://ci.appveyor.com/project/stphn/jekyllplate)
 [![Build Status](https://travis-ci.org/stphn/jekyllplate.svg?branch=master)](https://travis-ci.org/stphn/jekyllplate)
 
-
 Not just another boilerplate for static Jekyll sites using gulp automations.
 
 
