@@ -1,5 +1,7 @@
 # Jekyllplate
-[![Dependencies](https://david-dm.org/stphn/Jekyllplate.svg)](https://david-dm.org/stphn/Jekyllplate#info=dependencies) [![Build status](https://ci.appveyor.com/api/projects/status/h12tdfowqiwl7mrf?svg=true)](https://ci.appveyor.com/project/stphn/jekyllplate)
+[![Dependencies](https://david-dm.org/stphn/Jekyllplate.svg)](https://david-dm.org/stphn/Jekyllplate#info=dependencies)
+[![Build status](https://ci.appveyor.com/api/projects/status/h12tdfowqiwl7mrf?svg=true)](https://ci.appveyor.com/project/stphn/jekyllplate)
+[![Build Status](https://travis-ci.org/stphn/jekyllplate.svg?branch=master)](https://travis-ci.org/stphn/jekyllplate)
 
 
 Not just another boilerplate for static Jekyll sites using gulp automations.
@@ -30,10 +32,10 @@ $ cd jekillplate
 // install other dependencies
 $ npm start
 
-// start the file watching	
-$ gulp serve	
+// start the file watching
+$ gulp serve
 ```
- et Voilà
+ et voilà
 
 ### Writing Posts
 To add new drafts, add a file in the `posts/_drafts` directory that follows the naming convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary YAML front matter:
