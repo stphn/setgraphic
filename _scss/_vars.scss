@@ -1,12 +1,10 @@
 // Colors ------------------------------------------------------ //
 $colors: (
-	'white'  : #ffffff,
-	'black'  : #000000,
-	'light'  : #dddddd,
-	'dark'   : #111111,
-	'green'  : #6fae43,
-	'purple' : #8542aa,
-	'text'   : #333333
+	'white'  : #fff,
+	'black'  : #000,
+	'light'  : #fafafa,
+	'dark'   : #222,
+	'text'   : #222
 );
 
 // Sizes ------------------------------------------------------- //
@@ -27,7 +25,8 @@ $duration : .3s;
 $timing   : cubic-bezier(.51, .92, .24, 1);
 
 // Typography -------------------------------------------------- //
-$fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fontFamily: "Open Sans", Helvetica, Arial, sans-serif;
+$headerFamily: Montserrat, sans-serif;
 
 // Font -------------------------------------------------------- //
-$fontStack: normal 400 16px/1.6 $fontFamily;
+$fontStack: normal 400 1.2em/2 $fontFamily;
