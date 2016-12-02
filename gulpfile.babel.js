@@ -126,3 +126,5 @@ gulp.task('imagemin', () => {
     .pipe($.imagemin())
     .pipe(gulp.dest('_site/assets'));
 });
+
+gulp.task('default', ['serve']);
