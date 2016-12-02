@@ -14,3 +14,15 @@
 - title: NPM
   url: https://www.npmjs.com
   description: Npm is the package manager for JavaScript. Find, share, and reuse packages of code from hundreds of thousands of developers — and assemble them in powerful new ways
+
+- title: Liquid
+  url: http://shopify.github.io/liquid/
+  description: Safe, customer-facing template language for flexible web apps.
+
+- title: Github Pages
+  url: https://pages.github.com
+  description: Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
+
+- title: Front Matter
+  url: https://jekyllrb.com/docs/frontmatter/
+  description: The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file.
