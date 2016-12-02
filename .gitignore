@@ -1,7 +1,31 @@
-_assets
-posts/_posts/*
-posts/_drafts/*
-_site
+# Temporary files
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea/
+Icon\r\r
 .publish
+
+# External disk files
+.Spotlight-V100
+.Trashes
+
+# AFP share files
+.AppleDB
+.AppleDesktop
+.apdisk
+Network Trash Folder
+Temporary Items
+
+# Package Managers
+npm-debug.log
 node_modules
 bower
+src/assets/bower
+
+# Folder
+dist
+posts/_posts/*
+posts/_drafts/*
+_assets
+_site
