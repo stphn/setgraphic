@@ -5,7 +5,7 @@
   "author": "Stephane Goeuriot",
   "license": "MIT",
   "scripts": {
-	"prestart": "bower install",
+	"preinstall": "bower install",
 	"build": "bundle install && npm install && make"
   },
   "repository": {
