@@ -31,9 +31,14 @@ gulp.task('build:reload', ['build'], () => { reload(); });
 //  TASKS FOR DEPLOYMENT
 // ======================
 
-// First run htmlmin, then deploy to github
+// First run htmlmin, then deploy to the site folder
 gulp.task('deploy', ['htmlmin'], () => {
-  return gulp.src('./_site/**/*').pipe($.ghPages({branch: 'prod'}));
+  return gulp.src('./_site/**/*');
+});
+
+// First run htmlmin, then deploy to github
+gulp.task('ghPages', ['htmlmin'], () => {
+  return gulp.src('./_site/**/*').pipe($.ghPages({branch: 'gh-pages'}));
 });
 
 // First run build:prod and then minify HTML
