@@ -9,7 +9,7 @@
 title: Your Title
 brand: Your Awesome Product
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://setgraphic.com/" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 lang: US
 twitter_username: setgraphic
 github_username: stphn
@@ -29,6 +29,7 @@ exclude:
   - appveyor.yml
   - bower.json
   - tasks
+  - Rakefile
 keep_files:
   - assets
   - css/main.css
