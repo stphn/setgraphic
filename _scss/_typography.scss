@@ -1,6 +1,7 @@
 // Headlines -------------------------------------------------------------- //
 @include headlines() {
 	margin: 0 0 $gutter/2;
+	font-family: $headerFamily;
 	color: color('text');
 	text-rendering: optimizeLegibility;
 }
