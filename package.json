@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
 	"prestart": "bower install",
-	"start": "bundle install && npm install && make"
+	"build": "bundle install && npm install && make"
   },
   "repository": {
     "type": "git",

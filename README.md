@@ -26,7 +26,7 @@ Make sure you **double-checked** the pre-requisites listed above and open your c
 ```
 $ git clone https://github.com/stphn/jekyllplate.git
 $ cd jekillplate
-$ npm start
+$ npm build
 $ gulp serve
 ```
  et voilà
