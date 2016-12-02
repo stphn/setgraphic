@@ -1,7 +1,18 @@
 .footer {
 	display: flex;
 	align-items: center;
+
+	&__copy {
+		flex: 1;
+		font-size: .875em;
+	}
+
+	&__social {
+		margin-right: 0;
+	}
+
 	&__links {
-		padding-right: $gutter/2;
+		padding-left: $gutter/2;
+		font-size: .875em;
 	}
 }
