@@ -2,13 +2,13 @@
     <div class="column">
         <header class="header">
 
-            <div class="brand"><a href="#">{{ site.brand}}</a></div>
+            <a class="brand" href="/">{{ site.brand}}</a>
 
-            <nav class="main-nav">
-                <a href="{{ site.baseurl }}/">Home</a>
+            <nav class="nav">
+                <a class="nav__item" href="{{ site.baseurl }}/">Home</a>
                 {% for my_page in site.pages %}
                 {% if my_page.title and my_page.nav %}
-                <a class="page-link ajax-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                <a class="nav__item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
                 {% endif %}
                 {% endfor %}
 
