@@ -61,7 +61,7 @@ Only pages with `nav` set to `true` will appear in the top navigation. Easy.
 
 ***
 
-## Deployment
+### How to deploy
 This is automatically ready to deploy, so long as the `gulp` server has been running during development.
 
 Built code lives in the `_site` directory. Deploy this to the `prod` branch with `gulp deploy`.
