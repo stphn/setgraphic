@@ -1,0 +1,9 @@
+.nav {
+	font-family: $headerFamily;
+	text-transform: uppercase;
+
+	&__item {
+		text-decoration: none;
+		padding-left: $gutter/2;
+	}
+}
