@@ -8,12 +8,13 @@ minimum size. See http://bit.ly/1Mn35US for details.
 .section {
 
 	&__header {
-		background-color: color('light');
+		background-color: color('dark');
 		flex: none; // 2
+		position: fixed;
+		width: 100%;
 	}
 	&__main {
 		flex: 1 0 auto; // 2
-		padding: $gutter 0;
 	}
 	&__footer {
 		background-color: color('light');
