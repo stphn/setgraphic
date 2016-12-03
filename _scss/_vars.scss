@@ -4,13 +4,15 @@ $colors: (
 	'black'        : #000,
 	'light'        : #f6f4e4,
 	'dark'         : #222,
-	'outstanding'  : #ff8966,
+	'mellowYellow' : #f6E27f,
+	'paleGold'     : #e2c391,
 	'text'         : #222
 );
 
 // Sizes ------------------------------------------------------- //
 $gutter   : 1.8rem;
 $maxWidth : 60em;
+$headerHeight : $gutter*2;
 
 // Breakpoints ------------------------------------------------- //
 $bpXXS : 480px;
