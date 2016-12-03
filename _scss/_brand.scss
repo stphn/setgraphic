@@ -1,8 +1,15 @@
 .brand {
+	display: flex;
+	align-items: center;
 	flex: 1;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-decoration: none;
-	color: color('outstanding');
+	color: color('white');
 	font-family: $headerFamily;
+	height: 60%;
+	svg {
+		height: 100%;
+		padding-right: $gutter/2;
+	}
 }
