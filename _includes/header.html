@@ -1,18 +1,19 @@
-<header class="header">
+<div class="header">
 
-	<a class="brand" href="/">
+	<section class="brand" href="/">
+		<h1 class="hide">Setgraphic logo</h1>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132"><path fill="#fff" d="M0,0V132H132V0ZM120,24H24V36h96V72H24v36h84V96H36V84h84v36H12V60h96V48H12V12H120Z"/></svg>
-		<span>{{ site.brand}}</span>
-	</a>
+		<div>{{ site.brand}}</div>
+	</section>
 
 	<nav class="nav">
+		<h3 class="hide">The main Navigation</h3>
 		<a class="nav__item" href="{{ site.baseurl }}/">Home</a>
 		{% for my_page in site.pages %}
 		{% if my_page.title and my_page.nav %}
 		<a class="nav__item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
 		{% endif %}
 		{% endfor %}
-
 	</nav>
 
-</header>
+</div>

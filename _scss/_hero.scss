@@ -1,10 +1,9 @@
 .hero {
-	min-height: 100vh;
+	min-height: calc(100vh - #{$headerHeight});
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	background: linear-gradient(-45deg, color('paleGold'), color('mellowYellow')); /* Standard syntax */
-	padding-top: $headerHeight;
 	&__clame {
 		padding: $gutter/2;
 	}

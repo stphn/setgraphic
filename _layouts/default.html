@@ -1,17 +1,29 @@
 {% include _layout/start.html %}
 <body>
 
-    <div class="section section__header">
-        {% include header.html %}
-    </div>
+	<header class="section section__header">
+		<h6 class="hide">The index page</h6>
+		<section>
+			<h2 class="hide">The header</h2>
+			{% include header.html %}
+		</section>
+	</header>
 
 
-    <div class="section section__main">
-		<main>{{ content }}</main>
-    </div>
+	<main class="section section__main">
+		<article>
+			{{ content }}
+		</article>
 
-    <div class="section section__footer">
-        {% include footer.html %}
-    </div>
+	</main>
 
-    {% include _layout/end.html %}
+
+	<footer class="section section__footer">
+		<section>
+			<h3 class="hide">The main footer</h3>
+			{% include footer.html %}
+		</section>
+
+	</footer>
+
+	{% include _layout/end.html %}

@@ -1,0 +1,25 @@
+.carousel {
+	background: url('../assets/light-grey-pattern.png');
+	position: relative;
+	margin: $gutter 0;
+
+}
+
+.carousel-cell {
+	text-align: center;
+	width: 20%;
+	min-height: 600px;
+	margin: $gutter;
+
+	@media (max-width: $bpS) {
+		width: 50%;
+	}
+	@media (max-width: $bpXS) {
+		width: 100%;
+	}
+
+}
+
+.flickity-viewport {
+	transition: height $timing;
+}

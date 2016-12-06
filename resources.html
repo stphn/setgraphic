@@ -1,17 +1,23 @@
 ---
-layout: page
-title: Resources
-permalink: /resources/
-nav: true
+layout: 		page
+title: 			Resources
+permalink: 		/resources/
+nav: 			true
+description: 	A list of usefull Jekyll ressources
 ---
-<!-- An example page demonstrating how to use YAML data -->
-<h2>Recommended Resources</h2>
 
-<ul>
-  {% for resource in site.data.resources %}
-  <li>
-    <a href="{{ resource.url }}" target="_blank">{{ resource.title }}</a>
-    &mdash; {{ resource.description }}
-  </li>
-  {% endfor %}
-</ul>
+<div class="row">
+	<div class="column">
+		<!-- An example page demonstrating how to use YAML data -->
+		<h1>Recommended Resources</h1>
+
+		<ul>
+			{% for resource in site.data.resources %}
+			<li>
+				<a href="{{ resource.url }}" target="_blank">{{ resource.title }}</a>
+				&mdash; {{ resource.description }}
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

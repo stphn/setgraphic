@@ -1,0 +1,29 @@
+- full_name: Ellen Auhage
+  headerImg: ../assets/members/ellen-bg.jpg
+  avatar: ../assets/members/ellen.jpg
+  jobtitle: C0-founder // Technical Director
+  skills: Web Development, Project Management, Content Strategist
+  dribbble:
+  twitter: ellen
+  mail: ea@setgraphic
+  homepage: http://setgraphic.com
+
+- full_name: Stéphane Goeuriot
+  headerImg: ../assets/members/stephane-bg.jpg
+  avatar: ../assets/members/stephane.jpg
+  jobtitle: C0-founder // Creative Director
+  skills: Webdesign, UI Design, UX Design, Art Direction
+  dribbble: setgraphic
+  twitter: setgraphic
+  mail: sg@setgraphic
+  homepage: http://stphn.io
+
+- full_name: Snoop Body God
+  headerImg: ../assets/members/snoop-bg.jpg
+  avatar: ../assets/members/snoop.jpg
+  jobtitle: C0-founder // Praktikant
+  skills: Schlafen, essen, bellen, rollen, bitten
+  dribbble:
+  twitter: oo
+  homepage: http://setgraphic.com
+  mail: hello @setgraphic

@@ -3,39 +3,210 @@ layout: page
 title: Home
 description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
 ---
-<div class="section section__hero">
+<h1 class="hide">Setgraphic webdesign frankfurt</h1>
+<section class="section section__hero">
+	<h2 class="hide">The hero</h2>
 	{% include hero.html %}
-</div>
+</section>
 
-<h2>Hello!</h2>
-<p>This is an example of a page.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-	incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-	exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-	irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-	pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-	deserunt mollit anim id est laborum.
-</p>
-<a href="#" class="btn btn--dark" title="title">link text</a>
-<a href="#" class="btn btn--outstanding" title="title">link text</a>
+<section class="section section__clame">
+	<h3 class="c-white spacing-zero">Wir machen fantastische webseiten</h3>
+</section>
 
-{% highlight html %}
+<section class="section section__about">
 
-<div class="row">
-	<div class="column">
-		<footer class="footer">
-
-			<div class="footer__copy">&copy; {{ "now" | date: "%Y" }} {{ site.brand}}</div>
-
-			<div class="footer__social">
-				<a class="footer__links"href="http://twitter.com/{{ site.twitter_username }}" target="_blank">twitter</a>
-				<a class="footer__links"href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">linkedin</a>
-				<a class="footer__links"href="http://github.com/{{ site.github_username }}" target="_blank">github</a>
-			</div>
-
-		</footer>
+	<div class="row">
+		<div class="column">
+			<h1 class="h3 spacing-zero c-riverBed">Wir sind setgraphic, eine <b class="c-parchment">Interaktive Kreativ Agentur</b> in Frankfurt am Main. Unsere Leidenschaft gilt dem <b class="c-parchment">Design und der Entwicklung von Apps &amp; Webseiten</b>. Für uns sind Webseiten mehr als nur eine einfache Darstellung von Informationen. <b class="c-parchment">Wir lieben es Emotionen zu wecken</b> und gestalten Webseiten die mit Funktionalität, Design und Kommunikation bestechen.</h1>
+		</div>
 	</div>
-</div>
+
+</section>
+
+<section class="section section__features">
+
+	<h2 class="hide">The main features</h2>
+
+	<div class="row">
+
+		<div class="column medium-4">
+			<div class="feature">
+				<figure class="feature__gif">
+					<img src="assets/gifs/color-wheel.gif" width="287" height="172" alt="website frankfurt am main">
+				</figure>
+				<header>
+					<h3 class="feature__headline">Kreativ</h3>
+					<p>Unsere Werbeagentur folgt Trends, sorgt für Ästethik und nutzt immer die neusten Techniken, für eine maßgeschneiderte digitale Kommunikation zwischen deinem Projekt und deinen Kunden. Setgraphic bietet professionelles Projektmanagement, Brand Entwicklung, Graphik Design <span class="amp">&amp;</span> Konzept Entwicklung.</p>
+				</header>
+			</div>
+		</div>
+
+		<div class="column medium-4">
+			<div class="feature">
+				<figure class="feature__gif">
+					<img src="assets/gifs/konzept.gif" width="287" height="172" alt="werbeagentur in frankfurt am main">
+				</figure>
+				<header>
+					<h3 class="feature__headline">Im fokus</h3>
+					<p>Mit der Gründung 2013 durch Stéphane Goeuriot, wächst das hochqualifizierte Team an Designern und Entwicklern stetig weiter. Mit dem Fokus auf kreative Gestaltung, Konzeption <span class="amp">&amp;</span> Entwicklung von digitalen Medien, bietet unsere Werbeagentur Lösungen, Projektmanagement und Beratung für Internet, On- <span class="amp">&amp;</span> Offline-Präsentationen. sowie Animationen.</p>
+				</header>
+			</div>
+		</div>
+		<div class="column medium-4">
+			<div class="feature">
+				<figure class="feature__gif">
+					<img src="assets/gifs/responsive.gif" width="287" height="172" alt="design agentur in frankfurt am main">
+				</figure>
+				<header>
+					<h3 class="feature__headline">Digital</h3>
+					<p>Mit umfassendem Wissen im technischen Bereich, setzt unsere Werbeagentur penibel und schnell kreative Konzepte um. Unsere Seiten sind Benutzerfreundlich, gut strukturiert und zeichnen sich durch eine schnelle Performance aus. Wir sind Spezialisten in HTML5 <span class="amp">&amp;</span> CSS3, SCSS, Javascript <span class="amp">&amp;</span> Jekyll, Wordpress und PHP.</p>
+				</header>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<h2 class="hide">Unser team</h2>
+	<div class="row">
+		{% for member in site.data.members %}
+		<div class="column medium-4">
+			<div class="member" itemscope="" itemtype="http://schema.org/Person">
+				<div class="member__header"><img class="spacing-zero" src="{{ member.headerImg }}" alt=""></div>
+				<div class="member__avatar"><img class="spacing-zero" src="{{ member.avatar }}" alt=""></div>
+				<div class="member__card">
+
+					<div class="member__name"><h3>{{ member.full_name }}</h3></div>
+					<div class="member__jobTitle"><h4>{{ member.jobtitle }}</h4></div>
+					<div class="member__skills">Skills: {{ member.skills }}</div>
+
+					{% if member.dribbble or member.github or member.github or member.homepage or member.mail  %}
+					<div class="member__contacts">
+					{% if member.dribbble  %}<a href="https://dribbble.com/{{ member.dribbble }}">{{ member.dribbble }}</a>{% endif %}
+					{% if member.github  %}<a href="https://github.com/{{ member.github }}">{{ member.github }}</a>{% endif %}
+					{% if member.twitter  %}<a href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>{% endif %}
+					{% if member.homepage  %}<a href="{{ member.homepage }}">{{ member.homepage }}</a>{% endif %}
+					{% if member.mail  %}<a href="mailto:{{ member.mail }}">{{ member.mail }}</a>{% endif %}
+					</div>
+					{% endif %}
+
+				</div>
+
+			</div>
+		</div>
+		{% endfor %}
+
+	</div>
+
+</section>
+<section>
+
+	<h2 class="hide">Unser leistungen</h2>
+
+	<div class="carousel" data-flickity>
+		<div class="carousel-cell">
+			<figure>
+				<img width="220" src="assets/icons/webdesign.svg" />
+			</figure>
+			<h3>Web design</h3>
+			<p class="h5">Von retro bis modern, entwirft unsere Werbeagentur ein stimmiges Design mit hohem Wiedererkennungswert. Dies ist der Kern deiner effektiven, professionellen <span class="amp">&amp;</span> werbewirksamen Online-Präsenz.</p>
+		</div>
+
+		<div class="carousel-cell">
+			<figure>
+				<img width="220" src="assets/icons/mobile-ready.svg" />
+			</figure>
+			<h3>Mobile Ready</h3>
+			<p class="h5">Die Webseiten unserer Werbeagentur sind responsiv und passen sich allen Bildschirmgrößen an. Wir von Setgraphic sorgen dafür, dass deine Seite somit auch unterwegs gut aussieht, ob auf Tablet oder Mobiltelefon.</p>
+		</div>
+
+		<div class="carousel-cell">
+			<figure>
+				<img width="220" src="assets/icons/beratung.svg" />
+			</figure>
+			<h3>Beratung</h3>
+			<p class="h5">Du brauchst Hilfe bei der Realisierung deines Online-Projektes? Von unsere Werbeagentur erhälst du eine fundierte Rundum-Betreuung, um für dich als Start-Up, Klein- oder Mittelständiger Unternehmer, die optimale Strategie zu finden.</p>
+		</div>
+
+		<div class="carousel-cell">
+			<figure>
+				<img width="220" src="assets/icons/social-media.svg" />
+			</figure>
+			<h3>Social Media</h3>
+			<p class="h5">Unser Social Media Marketing steigert durch stetige Präsenz, das Bewusstsein des Kunden für deine Marke <span class="amp">&amp;</span> Unternehmen. Wir bieten zielgruppen-orientierte Kampagnen auf Twitter, Facebook und anderen Plattformen.</p>
+		</div>
+
+		<div class="carousel-cell">
+			<figure>
+				<img width="220" src="assets/icons/seo.svg" />
+			</figure>
+			<h3 class="h3">SEO/SEM</h3>
+			<p class="h5">Eine ausführliche Keyword-Analyse und unser sauber programmierter Code nach HTML-Standards, sorgen für eine optimale Indizierung bei Suchmaschienen wie Google, Bing <span class="amp">&amp;</span> Yahoo. Damit dein Unternehmen von Kunden effizienter gefunden wird.</p>
+		</div>
+
+		<div class="carousel-cell">
+			<figure>
+				<img width="220" src="assets/icons/branding.svg" />
+			</figure>
+			<h3 class="h3">Branding</h3>
+			<p class="h5">Du brauchst ein prägnantes Logo, eine online Werbestrategie und eine hervorstechende Webseite? Dann unterstützten und beraten dich unsere Spezialisten unsere Werbeagentur gerne, um ein auf dein Unternhemen zugeschnittenes Branding zu designen.</p>
+		</div>
+
+		<div class="carousel-cell">
+			<figure>
+				<img width="220" src="assets/icons/wartung.svg" />
+			</figure>
+			<h3 class="h3">Wartung</h3>
+			<p class="h5">Damit du immer up-to-date bist, warten und pflegen wir dein Projekt. Wir informieren dich auf Anfrage, regelmässig über Neuigkeiten im Web und die Möglichkeiten dein Unternehmen zu optimieren.</p>
+		</div>
+
+		<div class="carousel-cell">
+			<figure>
+				<img width="220" src="assets/icons/konzeption.svg" />
+			</figure>
+			<h3 class="h3">Konzeption</h3>
+			<p class="h5">Die richtige Zielsetzung ist der wichtigste Schritt für einen effizienten <span class="amp">&amp;</span> erfolgreichen Abschluss. Das Team unserer Werbeagentur, weiß immer was du brauchst, zeigt Lösungswege und analysiert die Lage.</p>
+		</div>
+
+	</div>
+
+</section>
+
+<section>
+	<h2 class="hide">Kontakt</h2>
+	<div class="row">
+		<div class="column">
+			<form action="//formspree.io/email@domain.com" method="POST">
+
+				<label class="label" for="name">Your name</label>
+				<input class="input" type="text" name="name" placeholder="Name" required>
 
 
-{% endhighlight %}
+				<label class="label" for="_replyto">Your email</label>
+				<input class="input" type="email" name="_replyto" placeholder="example@domain.com" required>
+
+				<label class="label" for="message">Your message</label>
+				<textarea class="input" rows="8" cols="40" name="message"  placeholder="Message" required></textarea>
+
+				<input class="hidden" type="text" name="_gotcha" style="display:none">
+				<input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
+
+				<input class="btn btn--schooner" type="submit" value="Send">
+			</form>
+		</div>
+	</div>
+
+</section>
+<section>
+	<h2 class="hide">Kontakt</h2>
+	<div class="row">
+		<div class="column">
+			{% for portfolio in site.portfolio limit:3 %}
+			<li>
+				<img src="{{ portfolio.thumbnail-path }}" alt="{{ portfolio.title }}"/>
+				<a href="{{ portfolio.url }}">{{ portfolio.title }}</a>
+				<p>{{ portfolio.short-description }}</p>
+			</li>
+			{% endfor %}
+		</div>
+	</div>
+</section>

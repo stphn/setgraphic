@@ -1,0 +1,21 @@
+.feature {
+	text-align: center;
+
+	header h2 {
+		font-family: $headerFamily;
+		text-transform: uppercase;
+	}
+
+	header p {
+		text-align: left;
+	}
+	&__headline::after {
+		box-shadow: 2px 2px 3px #f3e9d0;
+		content: '';
+		width: 58%;
+		height: 3px;
+		background: color('schooner');
+		display: block;
+		margin: 0 auto;
+	}
+}

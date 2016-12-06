@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {
     "basicGrid": "2.0.0",
-    "normalize-css": "5.0.0"
+    "normalize-css": "5.0.0",
+    "flickity": "^2.0.5",
+    "formbase": "^2.0.0"
   }
 }
