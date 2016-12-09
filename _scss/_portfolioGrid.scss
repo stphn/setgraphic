@@ -1,0 +1,31 @@
+.portfolioGrid {
+	$border: 1px solid color('paleGold');
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		display: flex;
+		width: 33.33%;
+		height: calc(33.33vh - #{$headerHeight}/2);
+		text-align: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		flex-direction: column;
+		justify-content: center;
+
+		&:nth-child(2), &:nth-child(5), &:nth-child(8) {
+			border-left: $border;
+			border-right: $border;
+		}
+		&:nth-child(4), &:nth-child(5), &:nth-child(6) {
+			border-top: $border;
+			border-bottom: $border;
+		}
+	}
+	&__header {
+		color: color('white');
+
+	}
+
+}

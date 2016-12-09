@@ -10,3 +10,4 @@ import { each } from './_helpers'
 
 import './_hide'
 import './_flickity'
+import './_canvas'

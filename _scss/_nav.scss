@@ -1,10 +1,11 @@
 .nav {
 	font-family: $headerFamily;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
 	&__item {
-		text-decoration: none;
 		padding-left: $gutter/2;
-		color: color('white');
 	}
 }

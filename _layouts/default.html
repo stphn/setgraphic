@@ -1,7 +1,7 @@
 {% include _layout/start.html %}
 <body>
 
-	<header class="section section__header">
+	<header class="section section__header bg-dark">
 		<h6 class="hide">The index page</h6>
 		<section>
 			<h2 class="hide">The header</h2>
@@ -12,13 +12,14 @@
 
 	<main class="section section__main">
 		<article>
+			<h1 class="hide">{{ page.title }}</h1>
 			{{ content }}
 		</article>
 
 	</main>
 
 
-	<footer class="section section__footer">
+	<footer class="section bg-dark">
 		<section>
 			<h3 class="hide">The main footer</h3>
 			{% include footer.html %}

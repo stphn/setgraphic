@@ -4,35 +4,20 @@
 letting these items shrink to smaller than their content's default
 minimum size. See http://bit.ly/1Mn35US for details.
 */
-
 .section {
-
 	&__header {
-		background-color: color('dark');
 		flex: none; // 2
 		position: fixed;
-		z-index: 1;
+		z-index: 5;
 		width: 100%;
 	}
+
 	&__main {
-		margin-top: $headerHeight;
+		padding-top: $headerHeight;
 		flex: 1 0 auto; // 2
 	}
-	&__clame {
-		background-color: color('dark');
-		text-align: center;
-		text-transform: uppercase;
-		padding: $gutter/2 0;
-	}
-	&__about {
-		background-color: color('schooner');
-		padding: $gutter*3 0;
-	}
-	&__features {
-		padding: $gutter*3 0;
-	}
+
 	&__footer {
-		background-color: color('light');
 		flex: none; // 2
 	}
 }

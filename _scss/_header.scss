@@ -1,6 +1,8 @@
 .header {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	margin: 0 $gutter/2;
 	height: $headerHeight;
+	background: url('../assets/images/dark-grey-pattern.png');
 }

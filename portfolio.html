@@ -1,0 +1,26 @@
+---
+layout: default
+title: Portfolio
+permalink: /portfolio/
+nav: true
+---
+
+<div class="row">
+	<div class="column">
+		<div class="portfolioGrid">
+			{% for portfolio in site.portfolios limit:9 %}
+
+			<div class="portfolioGrid__item" style="background-image: url('{{portfolio.thumbnail-path}}'); background-size: cover;">
+				<div class="portfolioGrid__header">
+					<a class="h3 ttu tdn c-white" href="{{ portfolio.url }}">{{ portfolio.title }}</a>
+					<h4 class="h4 c-white">{{ portfolio.categories | join: ', ' }}</h4>
+					<a href="{{ portfolio.url }}" class="portfolioGrid__link btn btn--white" title="{{ portfolio.title }} ansehen">ansehen</a>
+				</div>
+
+			</div>
+
+			{% endfor %}
+
+		</div>
+	</div>
+</div>

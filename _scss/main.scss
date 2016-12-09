@@ -17,11 +17,14 @@
 @import 'img';
 @import 'table';
 @import 'hr';
+@import 'bloquote';
 @import 'spacing';
 @import 'bg';
 @import 'c';
+@import 'text';
 @import 'btn';
 @import 'align';
+@import 'vc';
 
 // Main Header specific --------------------------------------- //
 @import 'header';
@@ -37,3 +40,6 @@
 @import 'feature';
 @import 'carousel';
 @import 'member';
+@import 'tags';
+@import 'portfolioGrid';
+@import 'contact';

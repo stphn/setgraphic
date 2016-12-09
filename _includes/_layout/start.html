@@ -20,18 +20,18 @@
 	<!-- Open Graph protocol and Twitter Cards -->
 	<meta property="og:title" content="{{ site.title }} | {{ page.title }}">
 	<meta property="og:description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<meta property="og:image" content="{{site.url }}/og.jpg">
+	<meta property="og:image" content="{{site.url }}og.jpg">
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Space+Mono|Open+Sans:400,700|Montserrat' rel='stylesheet' type='text/css'>
 	{% if jekyll.environment == "production" %}
 
 	{% for style in site.styles %}<link rel="stylesheet" href="{{ style | prepend: site.baseurl }}">{% endfor %}
-	<link rel="stylesheet" href="{{ "/css/main.min.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="/css/main.min.css">
 
 	{% else %}
 
 	{% for style in site.styles %}<link rel="stylesheet" href="{{ style }}">{% endfor %}
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="/css/main.css">
 
 	{% endif %}
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

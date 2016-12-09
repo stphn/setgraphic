@@ -10,7 +10,7 @@ title:              Setgraphic
 brand:              Setgraphic
 description:        Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
 baseurl:            "" # the subpath of your site, e.g. /setgraphic
-url:                "http://setgraphic.com" # the base hostname & protocol for your site
+url:                "" # the base hostname & protocol for your site
 lang:               de-DE
 twitter_username:   setgraphic
 github_username:    stphn
@@ -28,9 +28,9 @@ scripts:
   - /bower/flickity/dist/flickity.pkgd.min.js
 
 collections:
-  portfolio:
+  portfolios:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /portfolios/:path/
 
 # Build settings
 markdown: kramdown
