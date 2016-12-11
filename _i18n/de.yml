@@ -1,0 +1,36 @@
+global:
+  hero: Das interaktive kreativ studio
+  tagline: Wir machen fantastische webseiten
+
+# lang switcher
+langs:
+  de: DE
+  en: EN
+  fr: FR
+
+# hidden site structured headlines
+headlines:
+  page: der Seite
+  header: der header
+  nav: weitere seiten
+  footer: der footer
+
+# seo titles
+titles:
+  home: Webdesign made in Frankfurt
+  services: leistungen
+  portfolio: projekte
+  blog: news
+  about: über uns
+  contact: kontakt
+  resources: resources
+
+# seo descriptions
+descriptions:
+  home: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
+  services: blog
+  portfolio: blog
+  blog: news
+  about: les talents
+  contact: contact
+  resources: ressources

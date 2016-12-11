@@ -5,18 +5,28 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+# Plugins settings
+gems:
+  - jekyll-multiple-languages-plugin
+
+# Language plugins settings
+languages: ["de", "fr", "en"]
+exclude_from_localizations: ["scripts","assets", "css", favicon.ico, og.jpg]
+
+
 # Site settings
 title:              Setgraphic
 brand:              Setgraphic
 description:        Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
 baseurl:            "" # the subpath of your site, e.g. /setgraphic
-url:                "" # the base hostname & protocol for your site
-lang:               de-DE
+url:                "http://localhost:3004" # the base hostname & protocol for your site
 twitter_username:   setgraphic
 github_username:    stphn
 linkedin_username:  goeuriot
 UA:                 UA-XXXXXXX-X # google analytic code
 permalink:          pretty
+
+
 
 # Scripts to prepend in start.html
 styles:
@@ -47,6 +57,7 @@ exclude:
   - bower.json
   - tasks
   - Rakefile
+  - npm-debug.log
 keep_files:
   - assets
   - css/main.css

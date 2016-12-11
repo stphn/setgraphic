@@ -1,8 +1,12 @@
 <div class="hero">
 
-	<div class="h2 hero__clame align-left">Das interaktive kreativ studio</div>
+	<div class="h2 hero__clame align-left"> <span class="tagline">{% t global.hero %}</span></div>
 	<figure class="hero__logo">
 		<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132"><path fill="#fff" d="M0,0V132H132V0ZM120,24H24V36h96V72H24v36h84V96H36V84h84v36H12V60h96V48H12V12H120Z"/></svg>
 	</figure>
-	<div class="h2 hero__clame align-right">Webdesign &amp; Development</div>
+	<div class="h2 hero__clame align-right">Webdesign &amp; Development
+		{% for item in site.translations[site.lang]["global"] %}
+    <p>{{ item[0] }} -> {{ item[1] }}</p>
+{% endfor %}
+	</div>
 </div>

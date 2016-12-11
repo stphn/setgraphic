@@ -2,9 +2,9 @@
 <body>
 
 	<header class="section section__header bg-dark">
-		<h6 class="hide">The index page</h6>
+		<h6 class="hide">{% t headlines.page %}</h6>
 		<section>
-			<h2 class="hide">The header</h2>
+			<h2 class="hide">{% t headlines.header %}</h2>
 			{% include header.html %}
 		</section>
 	</header>
@@ -12,7 +12,7 @@
 
 	<main class="section section__main">
 		<article>
-			<h1 class="hide">{{ page.title }}</h1>
+			<h1 class="hide">{% t page.title %}</h1>
 			{{ content }}
 		</article>
 
@@ -21,7 +21,7 @@
 
 	<footer class="section bg-dark">
 		<section>
-			<h3 class="hide">The main footer</h3>
+			<h3 class="hide">{% t headlines.footer %}</h3>
 			{% include footer.html %}
 		</section>
 

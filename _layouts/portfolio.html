@@ -5,7 +5,7 @@ layout: default
 	<div class="column medium-6">
 		<article class="post post--single" itemscope itemtype="http://schema.org/BlogPosting">
 			<header class="post__header">
-				<h2 class="post__title" itemprop="name headline">{{ page.title }}</h2>
+				<h2 class="post__title" itemprop="name headline">{% t page.title %}</h2>
 				<p class="post__meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
 			</header>
 

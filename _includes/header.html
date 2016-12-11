@@ -12,13 +12,14 @@
 	</section>
 
 	<nav class="nav">
-		<h3 class="hide">Weitere Seiten</h3>
+		<h3 class="hide">{% t headlines.nav %}</h3>
 
 		{% for my_page in site.pages %}
 		{% if my_page.title and my_page.nav %}
-		<h4 class="nav__item spacing-zero"><a  class="tdn c-white" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></h4>
+		<h4 class="nav__item spacing-zero"><a  class="tdn c-white" href="{{ my_page.url | prepend: site.baseurl }}">{% t my_page.title %}</a></h4>
 		{% endif %}
 		{% endfor %}
+		{% include lang-switch.html %}
 	</nav>
 
 </div>

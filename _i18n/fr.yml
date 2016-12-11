@@ -1,0 +1,36 @@
+global:
+  hero: Le studio créatif numérique
+  tagline: Nous realisons des sites fantastiques
+
+# lang switcher
+langs:
+  de: DE
+  en: EN
+  fr: FR
+
+# hidden site structured headlines
+headlines:
+  page: la page
+  header: intro
+  nav: autres kiens
+  footer: le footer
+
+# seo titles
+titles:
+  home: Webdesign made in Francfort
+  services: blog
+  portfolio: blog
+  blog: news
+  about: les talents
+  contact: contact
+  resources: ressources
+
+# seo descriptions
+descriptions:
+  home: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
+  services: blog
+  portfolio: blog
+  blog: news
+  about: les talents
+  contact: contact
+  resources: ressources

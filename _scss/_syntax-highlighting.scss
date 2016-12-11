@@ -5,12 +5,9 @@ figure.highlight {
 	margin: 0;
 	word-break: break-word;
 	border: 1px solid color('light');
-	.highlighter-rouge {
-		font-family: 'Space Mono', monospace;
-	}
+
 	.highlighter-rouge & {
 		background: #eef;
-		font-family: 'Space Mono', monospace;
 	}
 
 	li > & {
