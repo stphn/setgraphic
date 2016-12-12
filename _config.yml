@@ -26,7 +26,12 @@ linkedin_username:  goeuriot
 UA:                 UA-XXXXXXX-X # google analytic code
 permalink:          pretty
 
-
+include:
+  - _pages
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename/
 
 # Scripts to prepend in start.html
 styles:
