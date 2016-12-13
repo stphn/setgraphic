@@ -1,10 +1,9 @@
 ---
 layout: page
 title: titles.home
-description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
+description: descriptions.home
 
 ---
-
 <section class="section section__hero">
 	<h2 class="hide">The hero</h2>
 	{% include hero.html %}
@@ -76,7 +75,7 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/webdesign.svg" />
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/webdesign.svg" alt="webdesign" />
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Web design</h3>
 			</div>
@@ -86,7 +85,7 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/mobile-ready.svg" />
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/mobile-ready.svg" alt="mobile ready"/>
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Mobile Ready</h3>
 			</div>
@@ -96,7 +95,7 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/beratung.svg" />
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/beratung.svg" alt="beratung" />
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Beratung</h3>
 			</div>
@@ -106,7 +105,7 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/social-media.svg" />
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/social-media.svg" alt="social media" />
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Social Media</h3>
 			</div>
@@ -116,7 +115,7 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/seo.svg" />
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/seo.svg" alt="S.E.O" />
 				</figure>
 				<h3 class="h3 carousel-cell__headline">SEO/SEM</h3>
 			</div>
@@ -126,7 +125,7 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/branding.svg" />
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/branding.svg" alt="branding" />
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Branding</h3>
 			</div>
@@ -136,7 +135,7 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/wartung.svg" />
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/wartung.svg" alt="wartung" />
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Wartung</h3>
 			</div>
@@ -146,7 +145,7 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/konzeption.svg" />
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/konzeption.svg" alt="konzeption" />
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Konzeption</h3>
 			</div>
@@ -163,8 +162,8 @@ description: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / 
 		{% for member in site.data.members %}
 		<div class="column medium-4">
 			<div class="member" itemscope="" itemtype="http://schema.org/Person">
-				<div class="member__header"><img class="spacing-zero" src="{{ member.headerImg }}" alt=""></div>
-				<div class="member__avatar"><img class="spacing-zero" src="{{ member.avatar }}" alt=""></div>
+				<div class="member__header"><img class="spacing-zero" src="{{ member.headerImg }}" alt="member image"></div>
+				<div class="member__avatar"><img class="spacing-zero" src="{{ member.avatar }}" alt="member avatar"></div>
 				<div class="member__card">
 
 					<div class="member__name"><h3>{{ member.full_name }}</h3></div>

@@ -12,7 +12,7 @@ langs:
 headlines:
   page: la page
   header: intro
-  nav: autres kiens
+  nav: autres liens
   footer: le footer
 
 # seo titles
@@ -27,7 +27,7 @@ titles:
 
 # seo descriptions
 descriptions:
-  home: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
+  home: Nous sommes setgraphic, un Studio Interactif basé en Allemagne à Francfort-sur-le-Main. Nous créons et développons des sites Web et des applications mobiles.
   services: blog
   portfolio: blog
   blog: news

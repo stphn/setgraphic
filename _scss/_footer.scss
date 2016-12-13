@@ -1,18 +1,43 @@
 .footer {
 	display: flex;
 	align-items: center;
+	margin: 0 $gutter/2;
+
+	&__legal a {
+		display: flex;
+		align-items: center;
+	}
 
 	&__copy {
-		flex: 1;
-		font-size: .875em;
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__copy svg,
+	&__legal svg {
+		margin-right: $gutter/4;
 	}
 
 	&__social {
 		margin-right: 0;
+		display: flex;
 	}
 
 	&__links {
+		display: inline-flex;
+		align-items: center;
 		padding-left: $gutter/2;
+		will-change: transform;
+		transition: transform .3s $timing;
+		&:hover {
+			transform: scale(1.2);
+			opacity: .7;
+		}
+	}
+
+	* {
 		font-size: .875em;
 	}
 }

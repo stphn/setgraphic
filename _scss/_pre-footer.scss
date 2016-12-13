@@ -1,0 +1,37 @@
+.pre-footer {
+	padding: $gutter/2 0;
+
+	&__address {
+		padding: $gutter/2;
+	}
+
+	&__com a {
+		display: flex;
+		align-items: center;
+		&:hover {
+			color: darken(color('schooner'), 20%);
+		}
+	}
+	&__com svg {
+		margin-right: $gutter/4;
+	}
+
+	&__social {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__social a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		&:hover {
+			color: darken(color('schooner'), 20%);
+		}
+	}
+
+	&__social span {
+		padding-left: .75em;
+	}
+}

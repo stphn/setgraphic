@@ -21,16 +21,16 @@ titles:
   services: services
   portfolio: portfolio
   blog: news
-  about: the team
+  about: Our team
   contact: contact
   resources: resources
 
 # seo descriptions
 descriptions:
-  home: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
+  home: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt am Main Germany. We do websites landing pages blogs with competitive prices
   services: blog
   portfolio: blog
   blog: news
-  about: les talents
+  about: Setgraphic is a Creative Webdesign Studio based in Frankfurt Germany. We do websites and landing pages as well as blogs with very competitive prices
   contact: contact
   resources: ressources

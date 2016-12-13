@@ -19,7 +19,8 @@
 		<h4 class="nav__item spacing-zero"><a  class="tdn c-white" href="{{ my_page.url | prepend: site.baseurl }}">{% t my_page.title %}</a></h4>
 		{% endif %}
 		{% endfor %}
-		{% include lang-switch.html %}
-	</nav>
 
+	</nav>
+	{% include lang-switch.html %}
+	{% include icons.html %}
 </div>

@@ -1,23 +1,16 @@
 <div class="lang-switch">
-    <div>
 
-            <!-- Adds links to other languages on the post -->
-          {% for lang in site.languages %}
-            {% unless site.lang == lang %}
-              {% if lang == site.default_lang %}
-                <a class="c-white" href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
-              {% else %}
-                <a class="c-white" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
-              {% endif %}
+		<!-- Adds links to other languages on the post -->
+		{% for lang in site.languages %} {% unless site.lang == lang %}
+		{% if lang == site.default_lang %}
+		<a class="c-white tdn" href="{{ site.baseurl_root }}{{ page.url }}">{% t langs.{{ lang }} %}</a>
+		{% else %}
+		<a class="c-white tdn" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{% t langs.{{ lang }} %}</a>
+		{% endif %}
+		{% assign next = forloop.index | plus: 1 %}
+		{% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %} <span class="c-white separator"> | </span>
+		{% endif %} {% endunless %}
+		{% endfor %}
 
-              {% assign next = forloop.index | plus: 1 %}
 
-              {% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %}
-                <span class="c-white separator"> &bull; </span>
-              {% endif %}
-
-            {% endunless %}
-          {% endfor %}
-
-    </div>
 </div>

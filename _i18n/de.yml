@@ -17,20 +17,20 @@ headlines:
 
 # seo titles
 titles:
-  home: Webdesign made in Frankfurt
-  services: leistungen
-  portfolio: projekte
-  blog: news
-  about: über uns
-  contact: kontakt
-  resources: resources
+  home: Webdesign in Frankfurt am Main
+  services: Leistungen
+  portfolio: Projekte
+  blog: News
+  about: Über uns
+  contact: Kontakt
+  resources: Resourcen
 
 # seo descriptions
 descriptions:
   home: Setgraphic, interaktives Kreativ & Webdesign Studio in Frankfurt / Main. Wir entwickeln Webseiten + Blogs zu fairen Preisen + SEO &, online Strategien.
-  services: blog
-  portfolio: blog
+  services: Unser Services
+  portfolio: Unser Projekte
   blog: news
-  about: les talents
-  contact: contact
-  resources: ressources
+  about: Über uns
+  contact: Kontakt
+  resources: Resourcen
