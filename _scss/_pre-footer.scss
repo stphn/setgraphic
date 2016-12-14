@@ -8,10 +8,12 @@
 	&__com a {
 		display: flex;
 		align-items: center;
+
 		&:hover {
 			color: darken(color('schooner'), 20%);
 		}
 	}
+
 	&__com svg {
 		margin-right: $gutter/4;
 	}
