@@ -8,12 +8,11 @@ minimum size. See http://bit.ly/1Mn35US for details.
 	&__header {
 		flex: none; // 2
 		position: fixed;
-		z-index: 5;
 		width: 100%;
 	}
 
 	&__main {
-		padding-top: $headerHeight;
+		margin-top: $headerHeight;
 		flex: 1 0 auto; // 2
 	}
 

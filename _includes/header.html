@@ -2,10 +2,10 @@
 
 	<section>
 
-		<a href="/" class="tdn c-white spacing-zero" title="home sweet home">
+		<a href="/" class="tdn spacing-zero" title="home sweet home">
 			<div class="brand">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132"><path fill="#fff" d="M0,0V132H132V0ZM120,24H24V36h96V72H24v36h84V96H36V84h84v36H12V60h96V48H12V12H120Z"/></svg>
-				<h1 class="h2 c-white spacing-zero">{{ site.brand}}</h1>
+				<svg class="brand__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132"><path d="M0,0V132H132V0ZM120,24H24V36h96V72H24v36h84V96H36V84h84v36H12V60h96V48H12V12H120Z"/></svg>
+				<h1 class="brand__name h2 spacing-zero">{{ site.brand}}</h1>
 			</div>
 		</a>
 
@@ -16,7 +16,7 @@
 
 		{% for my_page in site.pages %}
 		{% if my_page.title and my_page.nav %}
-		<h4 class="nav__item spacing-zero"><a  class="tdn c-white" href="{{ my_page.url | prepend: site.baseurl }}">{% t my_page.title %}</a></h4>
+		<h4 class="nav__item spacing-zero"><a  class="tdn" href="{{ my_page.url | prepend: site.baseurl }}">{% t my_page.title %}</a></h4>
 		{% endif %}
 		{% endfor %}
 

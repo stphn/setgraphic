@@ -1,5 +1,6 @@
 <div class="lang-switch">
-
+		<div class="lang-switch__label c-white">lang:</div>
+		<div class="lang-switch__ics">
 		<!-- Adds links to other languages on the post -->
 		{% for lang in site.languages %} {% unless site.lang == lang %}
 		{% if lang == site.default_lang %}
@@ -8,9 +9,10 @@
 		<a class="c-white tdn" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{% t langs.{{ lang }} %}</a>
 		{% endif %}
 		{% assign next = forloop.index | plus: 1 %}
-		{% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %} <span class="c-white separator"> | </span>
+		{% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %} <span class="c-white"> or </span>
 		{% endif %} {% endunless %}
 		{% endfor %}
+		</div>
 
 
 </div>

@@ -4,9 +4,9 @@ global:
 
 # lang switcher
 langs:
-  de: DE
-  en: EN
-  fr: FR
+  de: <svg width="18" height="18"><use xlink:href="#icon-beer"></svg>
+  en: <svg width="18" height="18"><use xlink:href="#icon-hotdog"></svg>
+  fr: <svg width="18" height="18"><use xlink:href="#icon-french"></svg>
 
 # hidden site structured headlines
 headlines:

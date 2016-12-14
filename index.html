@@ -2,14 +2,18 @@
 layout: page
 title: titles.home
 description: descriptions.home
-
+scripts:
+  - /bower/gsap/src/uncompressed/TweenMax.js
+  - /bower/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js
+  - /bower/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js
+  - /bower/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js
 ---
 <section class="section section__hero">
 	<h2 class="hide">The hero</h2>
 	{% include hero.html %}
 </section>
 
-<section class="section bg-dark">
+<section class="section bg-dark triggerElement">
 	<h3 class="c-white spacing-zero ttu align-center">{% t global.tagline %}</h3>
 </section>
 
@@ -36,7 +40,8 @@ description: descriptions.home
 				</figure>
 				<header>
 					<h3 class="feature__headline">Kreativ</h3>
-					<p>Unsere Werbeagentur folgt Trends, sorgt für Ästethik und nutzt immer die neusten Techniken, für eine maßgeschneiderte digitale Kommunikation zwischen deinem Projekt und deinen Kunden. Setgraphic bietet professionelles Projektmanagement, Brand Entwicklung, Graphik Design <span class="amp">&amp;</span> Konzept Entwicklung.</p>
+					<p>Unsere Werbeagentur folgt Trends, sorgt für Ästethik und nutzt immer die neusten Techniken, für eine maßgeschneiderte digitale Kommunikation zwischen deinem Projekt und deinen Kunden. Setgraphic bietet professionelles Projektmanagement, Brand Entwicklung, Graphik Design
+						<span class="amp">&amp;</span> Konzept Entwicklung.</p>
 				</header>
 			</div>
 		</div>
@@ -48,7 +53,9 @@ description: descriptions.home
 				</figure>
 				<header>
 					<h3 class="feature__headline">Im fokus</h3>
-					<p>Mit der Gründung 2013 durch Stéphane Goeuriot, wächst das hochqualifizierte Team an Designern und Entwicklern stetig weiter. Mit dem Fokus auf kreative Gestaltung, Konzeption <span class="amp">&amp;</span> Entwicklung von digitalen Medien, bietet unsere Werbeagentur Lösungen, Projektmanagement und Beratung für Internet, On- <span class="amp">&amp;</span> Offline-Präsentationen. sowie Animationen.</p>
+					<p>Mit der Gründung 2013 durch Stéphane Goeuriot, wächst das hochqualifizierte Team an Designern und Entwicklern stetig weiter. Mit dem Fokus auf kreative Gestaltung, Konzeption
+						<span class="amp">&amp;</span> Entwicklung von digitalen Medien, bietet unsere Werbeagentur Lösungen, Projektmanagement und Beratung für Internet, On-
+						<span class="amp">&amp;</span> Offline-Präsentationen. sowie Animationen.</p>
 				</header>
 			</div>
 		</div>
@@ -59,7 +66,9 @@ description: descriptions.home
 				</figure>
 				<header>
 					<h3 class="feature__headline">Digital</h3>
-					<p>Mit umfassendem Wissen im technischen Bereich, setzt unsere Werbeagentur penibel und schnell kreative Konzepte um. Unsere Seiten sind Benutzerfreundlich, gut strukturiert und zeichnen sich durch eine schnelle Performance aus. Wir sind Spezialisten in HTML5 <span class="amp">&amp;</span> CSS3, SCSS, Javascript <span class="amp">&amp;</span> Jekyll, Wordpress und PHP.</p>
+					<p>Mit umfassendem Wissen im technischen Bereich, setzt unsere Werbeagentur penibel und schnell kreative Konzepte um. Unsere Seiten sind Benutzerfreundlich, gut strukturiert und zeichnen sich durch eine schnelle Performance aus. Wir sind Spezialisten in HTML5
+						<span class="amp">&amp;</span> CSS3, SCSS, Javascript
+						<span class="amp">&amp;</span> Jekyll, Wordpress und PHP.</p>
 				</header>
 			</div>
 		</div>
@@ -79,13 +88,14 @@ description: descriptions.home
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Web design</h3>
 			</div>
-			<p class="h5">Von retro bis modern, entwirft unsere Werbeagentur ein stimmiges Design mit hohem Wiedererkennungswert. Dies ist der Kern deiner effektiven, professionellen <span class="amp">&amp;</span> werbewirksamen Online-Präsenz.</p>
+			<p class="h5">Von retro bis modern, entwirft unsere Werbeagentur ein stimmiges Design mit hohem Wiedererkennungswert. Dies ist der Kern deiner effektiven, professionellen
+				<span class="amp">&amp;</span> werbewirksamen Online-Präsenz.</p>
 		</div>
 
 		<div class="carousel-cell">
 			<div>
 				<figure>
-					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/mobile-ready.svg" alt="mobile ready"/>
+					<img width="180" height="180" src="{{site.baseurl_root}}/assets/icons/mobile-ready.svg" alt="mobile ready" />
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Mobile Ready</h3>
 			</div>
@@ -109,7 +119,8 @@ description: descriptions.home
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Social Media</h3>
 			</div>
-			<p class="h5">Unser Social Media Marketing steigert durch stetige Präsenz, das Bewusstsein des Kunden für deine Marke <span class="amp">&amp;</span> Unternehmen. Wir bieten zielgruppen-orientierte Kampagnen auf Twitter, Facebook und anderen Plattformen.</p>
+			<p class="h5">Unser Social Media Marketing steigert durch stetige Präsenz, das Bewusstsein des Kunden für deine Marke
+				<span class="amp">&amp;</span> Unternehmen. Wir bieten zielgruppen-orientierte Kampagnen auf Twitter, Facebook und anderen Plattformen.</p>
 		</div>
 
 		<div class="carousel-cell">
@@ -119,7 +130,8 @@ description: descriptions.home
 				</figure>
 				<h3 class="h3 carousel-cell__headline">SEO/SEM</h3>
 			</div>
-			<p class="h5">Eine ausführliche Keyword-Analyse und unser sauber programmierter Code nach HTML-Standards, sorgen für eine optimale Indizierung bei Suchmaschienen wie Google, Bing <span class="amp">&amp;</span> Yahoo. Damit dein Unternehmen von Kunden effizienter gefunden wird.</p>
+			<p class="h5">Eine ausführliche Keyword-Analyse und unser sauber programmierter Code nach HTML-Standards, sorgen für eine optimale Indizierung bei Suchmaschienen wie Google, Bing
+				<span class="amp">&amp;</span> Yahoo. Damit dein Unternehmen von Kunden effizienter gefunden wird.</p>
 		</div>
 
 		<div class="carousel-cell">
@@ -149,7 +161,8 @@ description: descriptions.home
 				</figure>
 				<h3 class="h3 carousel-cell__headline">Konzeption</h3>
 			</div>
-			<p class="h5">Die richtige Zielsetzung ist der wichtigste Schritt für einen effizienten <span class="amp">&amp;</span> erfolgreichen Abschluss. Das Team unserer Werbeagentur, weiß immer was du brauchst, zeigt Lösungswege und analysiert die Lage.</p>
+			<p class="h5">Die richtige Zielsetzung ist der wichtigste Schritt für einen effizienten
+				<span class="amp">&amp;</span> erfolgreichen Abschluss. Das Team unserer Werbeagentur, weiß immer was du brauchst, zeigt Lösungswege und analysiert die Lage.</p>
 		</div>
 
 	</div>
@@ -162,21 +175,25 @@ description: descriptions.home
 		{% for member in site.data.members %}
 		<div class="column medium-4">
 			<div class="member" itemscope="" itemtype="http://schema.org/Person">
-				<div class="member__header"><img class="spacing-zero" src="{{ member.headerImg }}" alt="member image"></div>
-				<div class="member__avatar"><img class="spacing-zero" src="{{ member.avatar }}" alt="member avatar"></div>
+				<div class="member__header">
+					<img class="spacing-zero" src="{{ member.headerImg }}" alt="member image">
+				</div>
+				<div class="member__avatar">
+					<img class="spacing-zero" src="{{ member.avatar }}" alt="member avatar">
+				</div>
 				<div class="member__card">
 
-					<div class="member__name"><h3>{{ member.full_name }}</h3></div>
-					<div class="member__jobTitle"><h4>{{ member.jobtitle }}</h4></div>
+					<div class="member__name">
+						<h3>{{ member.full_name }}</h3>
+					</div>
+					<div class="member__jobTitle">
+						<h4>{{ member.jobtitle }}</h4>
+					</div>
 					<div class="member__skills">Skills: {{ member.skills }}</div>
 
-					{% if member.dribbble or member.github or member.github or member.homepage or member.mail  %}
+					{% if member.dribbble or member.github or member.github or member.homepage or member.mail %}
 					<div class="member__contacts">
-					{% if member.dribbble  %}<a href="https://dribbble.com/{{ member.dribbble }}">{{ member.dribbble }}</a>{% endif %}
-					{% if member.github  %}<a href="https://github.com/{{ member.github }}">{{ member.github }}</a>{% endif %}
-					{% if member.twitter  %}<a href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>{% endif %}
-					{% if member.homepage  %}<a href="{{ member.homepage }}">{{ member.homepage }}</a>{% endif %}
-					{% if member.mail  %}<a href="mailto:{{ member.mail }}">{{ member.mail }}</a>{% endif %}
+						{% if member.dribbble %}<a href="https://dribbble.com/{{ member.dribbble }}">{{ member.dribbble }}</a>{% endif %} {% if member.github %}<a href="https://github.com/{{ member.github }}">{{ member.github }}</a>{% endif %} {% if member.twitter %}<a href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>{% endif %} {% if member.homepage %}<a href="{{ member.homepage }}">{{ member.homepage }}</a>{% endif %} {% if member.mail %}<a href="mailto:{{ member.mail }}">{{ member.mail }}</a>{% endif %}
 					</div>
 					{% endif %}
 
@@ -193,40 +210,36 @@ description: descriptions.home
 <section>
 	<h2 class="hide">Portfolio</h2>
 
-		<div class="portfolioGrid">
-			{% for portfolio in site.portfolios limit:9 %}
+	<div class="portfolioGrid">
+		{% for portfolio in site.portfolios limit:9 %}
 
-			<div class="portfolioGrid__item" style="background-image: url('{{portfolio.thumbnail-path}}'); background-size: cover;">
-				<div class="portfolioGrid__header">
-					<a class="h3 ttu tdn c-white" href="{{ portfolio.url }}">{{ portfolio.title }}</a>
-					<h4 class="h4 c-white">{{ portfolio.categories | join: ', ' }}</h4>
-					<a href="{{ portfolio.url }}" class="portfolioGrid__link btn btn--white" title="{{ portfolio.title }} ansehen">ansehen</a>
-				</div>
-
+		<div class="portfolioGrid__item" style="background-image: url('{{portfolio.thumbnail-path}}'); background-size: cover;">
+			<div class="portfolioGrid__header">
+				<a class="h3 ttu tdn c-white" href="{{ portfolio.url }}">{{ portfolio.title }}</a>
+				<h4 class="h4 c-white">{{ portfolio.categories | join: ', ' }}</h4>
+				<a href="{{ portfolio.url }}" class="portfolioGrid__link btn btn--white" title="{{ portfolio.title }} ansehen">ansehen</a>
 			</div>
 
-			{% endfor %}
-
 		</div>
+
+		{% endfor %}
+
+	</div>
 
 </section>
 
 <section class="vc-full">
 	<h2 class="hide">Kontakt</h2>
 
-
-
 	<div class="contact">
 
 		<div class="row">
 			<div class="column">
 
-
 				<form action="//formspree.io/email@domain.com" method="POST">
 
 					<label class="label" for="name">Your name</label>
 					<input class="input" type="text" name="name" placeholder="Name" required>
-
 
 					<label class="label" for="_replyto">Your email</label>
 					<input class="input" type="email" name="_replyto" placeholder="example@domain.com" required>
@@ -242,6 +255,5 @@ description: descriptions.home
 			</div>
 		</div>
 	</div>
-
 
 </section>

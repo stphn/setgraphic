@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
 	"preinstall": "bower install",
-	"build": "bundle install && npm install && make"
+	"build": "bundle install && npm install && make",
+  "surge": "cd _site && surge"
   },
   "repository": {
     "type": "git",

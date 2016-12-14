@@ -1,18 +1,21 @@
 .vc {
-
 	&-full {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		min-height: calc(100vh - #{$headerHeight});
-
+		min-height: calc(50vh - #{$headerHeight});
+		@media (max-width: $bpM) {
+			min-height: calc(100vh - #{$headerHeight});
+		}
 	}
+
 	&-half {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		min-height: calc(50vh - #{$headerHeight});
 	}
+
 	&-third {
 		display: flex;
 		flex-direction: column;

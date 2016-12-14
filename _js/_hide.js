@@ -1,4 +1,3 @@
-
 import { each } from './_helpers'
 
 let myClasses = document.querySelectorAll('.hide'),

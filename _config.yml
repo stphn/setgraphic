@@ -38,9 +38,11 @@ styles:
   - /bower/normalize-css/normalize.css
   - /bower/flickity/dist/flickity.css
 
+
 # Scripts to prepend in end.html
 scripts:
   - /bower/flickity/dist/flickity.pkgd.min.js
+  - /bower/headroom.js/dist/headroom.min.js
 
 collections:
   portfolios:

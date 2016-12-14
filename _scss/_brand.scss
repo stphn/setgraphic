@@ -7,8 +7,9 @@
 	color: color('white');
 	font-family: $headerFamily;
 	height: 60%;
-	svg {
+	&__svg {
 		height: 1.3em;
 		padding-right: $gutter/2;
+		fill: #fff;
 	}
 }
