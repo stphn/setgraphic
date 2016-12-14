@@ -1,7 +1,15 @@
+.carouselContainer {
+	display: flex;
+	align-items: center;
+	height: 60vh;
+	background-color: red;
+}
+
 .carousel {
 	background: url('../assets/images/light-grey-pattern.png');
 	position: relative;
-	height: calc(80vh - #{$headerHeight});
+	height: 40rem;
+	flex: 1;
 
 	&::after,
 	&::before {
@@ -29,7 +37,7 @@
 	text-align: center;
 	width: 22%;
 	margin: $gutter;
-	height: 100%;
+	height: auto;
 	@media (max-width: $bpS) {
 		width: 50%;
 	}

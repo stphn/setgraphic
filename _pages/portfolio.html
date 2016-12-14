@@ -8,7 +8,7 @@ nav: true
 <div class="row">
 	<div class="column">
 		<div class="portfolioGrid">
-			{% for portfolio in site.portfolios limit:9 %}
+			{% for portfolio in site.portfolios limit:30 %}
 
 			<div class="portfolioGrid__item" style="background-image: url('{{portfolio.thumbnail-path}}'); background-size: cover;">
 				<div class="portfolioGrid__header">

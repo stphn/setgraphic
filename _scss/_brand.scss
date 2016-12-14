@@ -4,12 +4,10 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	text-decoration: none;
-	color: color('white');
 	font-family: $headerFamily;
 	height: 60%;
 	&__svg {
 		height: 1.3em;
 		padding-right: $gutter/2;
-		fill: #fff;
 	}
 }
