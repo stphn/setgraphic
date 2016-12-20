@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>{{ site.title }} | {% t page.title %}</title>
-	<meta name="description" content="{% if page.description %}{% t page.description %}{% else %}{{ site.description }}{% endif %}">
+	<title>{{ site.title }} | {{ page.title }}</title>
+
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
 	<!-- Twitter Cards -->
@@ -19,15 +19,15 @@
 	<meta property="og:url" content="{{page.url | prepend: site.url }}">
 
 	<!-- Open Graph protocol and Twitter Cards -->
-	<meta property="og:title" content="{{ site.title }} | {% t page.title %}">
-	<meta property="og:description" content="{% if page.description %}{% t page.description%}{% else %}{{ site.description }}{% endif %}">
+	<meta property="og:title" content="{{ site.title }} | {{ page.title }}">
+
 	<meta property="og:image" content="{{site.url }}/og.jpg">
 
 	<link href='http://fonts.googleapis.com/css?family=Space+Mono|Open+Sans:400,700|Montserrat' rel='stylesheet' type='text/css'> {% if jekyll.environment == "production" %} {% for style in site.styles %}
-	<link rel="stylesheet" href="{{ style | prepend: site.baseurl_root }}">{% endfor %}
-	<link rel="stylesheet" href="{{site.baseurl_root}}/css/main.min.css"> {% else %} {% for style in site.styles %}
-	<link rel="stylesheet" href="{{ style | prepend: site.baseurl_root }}">{% endfor %}
-	<link rel="stylesheet" href="{{site.baseurl_root}}/css/main.css"> {% endif %}
+	<link rel="stylesheet" href="{{ style | prepend: site.baseurl }}">{% endfor %}
+	<link rel="stylesheet" href="{{site.baseurl}}/css/main.min.css"> {% else %} {% for style in site.styles %}
+	<link rel="stylesheet" href="{{ style | prepend: site.baseurl }}">{% endfor %}
+	<link rel="stylesheet" href="{{site.baseurl}}/css/main.css"> {% endif %}
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml " | prepend: site.baseurl | prepend: site.url }}">
 	<script type="application/ld+json">

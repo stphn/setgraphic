@@ -9,15 +9,18 @@ nav: true
 	<div class="column">
 
 		<!-- Choose how many full posts we'd like to display -->
-		{% assign fullposts = 2 %}
+		{% assign fullposts = 4 %}
 
 		<h2>Latest Posts</h2>
 
-		{% if site.posts.size == 0 %}
+			{% if site.posts.size == 0 %}
 			<p>No posts posted yet!</p>
-		{% else %}
+			{% else %}
+
+
 			{% for post in site.posts %}
 			{% if forloop.index <= fullposts %}
+
 			<article class="post post--index" itemscope itemtype="http://schema.org/BlogPosting">
 				<header class="post__header">
 					<h2 class="post__title" itemprop="name headline"><a href="{{ post.url | prepend: site.baseurl }}" class="ajax-link">{{ post.title }}</a></h2>

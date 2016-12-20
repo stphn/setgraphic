@@ -34,3 +34,40 @@ descriptions:
   about: les talents
   contact: contact
   resources: ressources
+
+buttons:
+  ansehen: voir le projet
+
+members:
+  ellen:
+    full_name: Ellena Auhage
+    headerImg: ../assets/images/members/ellen-bg.jpg
+    avatar: ../assets/images/members/ellen.jpg
+    jobtitle: C0-founder // Technical Director
+    skills: Web Development, Project Management, Content Strategist
+    dribbble:
+    twitter: ellen
+    mail: ea@setgraphic
+    homepage: http://setgraphic.com
+
+  stephane:
+    full_name: Stéphane Goeuriot
+    headerImg: ../assets/images/members/stephane-bg.jpg
+    avatar: ../assets/images/members/stephane.jpg
+    jobtitle: C0-founder // Creative Director
+    skills: Webdesign, UI Design, UX Design, Art Direction
+    dribbble: setgraphic
+    twitter: setgraphic
+    mail: sg@setgraphic
+    homepage: http://stphn.io
+
+  SnoopBodyGod:
+    full_name: Snoop Body God
+    headerImg: ../assets/images/members/snoop-bg.jpg
+    avatar: ../assets/images/members/snoop.jpg
+    jobtitle: C0-founder // Praktikant
+    skills: Schlafen, essen, bellen, rollen, bitten
+    dribbble:
+    twitter: oo
+    homepage: http://setgraphic.com
+    mail: hello @setgraphic
