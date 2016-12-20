@@ -5,18 +5,6 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-
-description:
-  en: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-  fr: Écrivez une super description de votre nouveau site ici. Vous pouvez modifier cette ligne dans _config.yml. Elle apparaîtra dans la balise meta description (pour les résultats sur Google) et dans le fil RSS feed.xml.
-
-index:
-  en:
-  fr: accueil.html
-
-feed:
-  en: /feed.xml
-  fr: /flux.xml
 # Site settings
 title:              Setgraphic
 brand:              Setgraphic
@@ -28,6 +16,15 @@ github_username:    stphn
 linkedin_username:  goeuriot
 UA:                 UA-XXXXXXX-X # google analytic code
 permalink:          pretty
+
+
+index:
+  de:
+  fr: accueil.html
+feed:
+  de: /feed.xml
+  fr: /flux.xml
+
 
 include:
   - _pages
@@ -51,6 +48,9 @@ collections:
   portfolios:
     output: true
     permalink: /portfolios/:path/
+  references:
+    output: true
+    permalink: /references/:path/
 
 # Build settings
 markdown: kramdown

@@ -1,18 +1,16 @@
 <div class="lang-switch">
-		<span>lang:</span>
+	<span>lang:</span>
 
-		<!-- Adds links to other languages on the post -->
-		{% for lang in site.languages %} {% unless site.lang == lang %}
-		{% if lang == site.default_lang %}
-		<a class="c-white tdn" href="{{ site.baseurl_root }}{{ page.url }}">{% t langs.{{ lang }} %}</a>
-		{% else %}
-		<a class="c-white tdn" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{% t langs.{{ lang }} %}</a>
-		{% endif %}
-		{% assign next = forloop.index | plus: 1 %}
-		{% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %} <span> or </span>
-		{% endif %} {% endunless %}
+	<ul>
+		{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %} {% for post in posts %}
+		<li>
+			<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+		</li>
+		{% endfor %} {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} {% for page in pages %}
+		<li>
+			<a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+		</li>
 		{% endfor %}
-
-
+	</ul>
 
 </div>

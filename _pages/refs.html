@@ -1,0 +1,29 @@
+---
+layout: default
+title: portfolio
+permalink: /references/
+ref: portfolio
+lang: fr
+---
+
+<div class="row">
+	<div class="column">
+		<div class="portfolioGrid">
+
+			{% for reference in site.references limit:30 %}
+
+
+			<div class="portfolioGrid__item" style="background-image: url('{{reference.thumbnail-path}}'); background-size: cover;">
+				<div class="portfolioGrid__header">
+					<a class="h3 ttu tdn c-white" href="{{ site.baseurl }}{{ reference.url }}">{{ reference.title }}</a>
+					<h4 class="h4 c-white">{{ reference.categories | join: ', ' }}</h4>
+					<a href="{{ site.baseurl }}{{ reference.url }}" class="portfolioGrid__link btn btn--white" title="{{ reference.title }} ansehen">voir</a>
+				</div>
+
+			</div>
+
+			{% endfor %}
+
+		</div>
+	</div>
+</div>

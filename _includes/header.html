@@ -15,12 +15,16 @@
 
 	<nav class="nav">
 		<h3 class="hide">gfdgdf</h3>
+		<div class="trigger">
+        {% assign pages=site.pages | where:"lang", page.lang %}
+        {% for my_page in pages %}
+          {% if my_page.title %}
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
 
-		{% for my_page in site.pages %}
-		{% if my_page.title and my_page.nav %}
-		<h4 class="nav__item spacing-zero"><a  class="tdn" href="{{ my_page.url | prepend: site.baseurl }}">{{ page.title }}</a></h4>
-		{% endif %}
-		{% endfor %}
+
 
 	</nav>
 	{% include lang-switch.html %}
