@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/stphn/jekyllplate#readme",
   "dependencies": {
-    "babel-loader": "^8.0.6",
+    "babel-loader": "8.0.6",
     "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-register": "^6.18.0",
